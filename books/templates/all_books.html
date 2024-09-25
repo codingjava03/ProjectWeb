@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Books</title>
+</head>
+<body>
+    <h1>ALL BOOKS</h1>
+    <ul>
+        {% for book in books %}
+            <li>({{ book.title }}) by ({{ book.author }}) (available: {{ book.is_available }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
